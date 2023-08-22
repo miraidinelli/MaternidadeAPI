@@ -1,20 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\felnd\\Downloads\\DevProjcs\\+Devs2Blu_Proj\\AulaAPI\\MaternidadeAPI\\MaternidadeAPI\\MaternidadeAPI.csproj": {}
+    "D:\\GitHubRepositories\\aaa\\MaternidadeAPI\\MaternidadeAPI\\MaternidadeAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\felnd\\Downloads\\DevProjcs\\+Devs2Blu_Proj\\AulaAPI\\MaternidadeAPI\\MaternidadeAPI\\MaternidadeAPI.csproj": {
+    "D:\\GitHubRepositories\\aaa\\MaternidadeAPI\\MaternidadeAPI\\MaternidadeAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felnd\\Downloads\\DevProjcs\\+Devs2Blu_Proj\\AulaAPI\\MaternidadeAPI\\MaternidadeAPI\\MaternidadeAPI.csproj",
+        "projectUniqueName": "D:\\GitHubRepositories\\aaa\\MaternidadeAPI\\MaternidadeAPI\\MaternidadeAPI.csproj",
         "projectName": "MaternidadeAPI",
-        "projectPath": "C:\\Users\\felnd\\Downloads\\DevProjcs\\+Devs2Blu_Proj\\AulaAPI\\MaternidadeAPI\\MaternidadeAPI\\MaternidadeAPI.csproj",
-        "packagesPath": "C:\\Users\\felnd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felnd\\Downloads\\DevProjcs\\+Devs2Blu_Proj\\AulaAPI\\MaternidadeAPI\\MaternidadeAPI\\obj\\",
+        "projectPath": "D:\\GitHubRepositories\\aaa\\MaternidadeAPI\\MaternidadeAPI\\MaternidadeAPI.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHubRepositories\\aaa\\MaternidadeAPI\\MaternidadeAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Users\\mathe\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\felnd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
