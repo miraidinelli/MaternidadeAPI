@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MaternidadeAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230822183849_InitialMigration")]
+    [Migration("20230822200137_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -27,11 +27,11 @@ namespace MaternidadeAPI.Migrations
 
             modelBuilder.Entity("MaternidadeAPI.Model.MaeModel", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CPF")
                         .IsRequired()
@@ -76,7 +76,7 @@ namespace MaternidadeAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Mae");
                 });
@@ -85,6 +85,9 @@ namespace MaternidadeAPI.Migrations
                 {
                     b.Property<int>("Id")
                         .HasColumnType("int");
+
+                    b.Property<double>("APagar")
+                        .HasColumnType("float");
 
                     b.Property<double>("Altura")
                         .HasColumnType("float");

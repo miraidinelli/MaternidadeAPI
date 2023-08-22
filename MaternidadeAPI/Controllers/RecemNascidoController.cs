@@ -19,7 +19,7 @@ namespace MaternidadeAPI.Controllers
 		{
 			var request = await _recemNascidoService.GetAllRecemNascidos();
 
-			if(request == null)
+			if (request == null)
 			{
 				return NotFound("Recem Nascido Não Encontrado");
 			}

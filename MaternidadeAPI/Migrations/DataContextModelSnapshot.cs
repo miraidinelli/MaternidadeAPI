@@ -83,6 +83,9 @@ namespace MaternidadeAPI.Migrations
                     b.Property<int>("Id")
                         .HasColumnType("int");
 
+                    b.Property<double>("APagar")
+                        .HasColumnType("float");
+
                     b.Property<double>("Altura")
                         .HasColumnType("float");
 

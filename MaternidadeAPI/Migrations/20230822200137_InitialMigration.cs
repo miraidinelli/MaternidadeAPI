@@ -15,7 +15,7 @@ namespace MaternidadeAPI.Migrations
                 name: "Mae",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sobrenome = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -31,7 +31,7 @@ namespace MaternidadeAPI.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Mae", x => x.id);
+                    table.PrimaryKey("PK_Mae", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -45,7 +45,8 @@ namespace MaternidadeAPI.Migrations
                     Nascimento = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Peso = table.Column<double>(type: "float", nullable: false),
                     Altura = table.Column<double>(type: "float", nullable: false),
-                    Condicao = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Condicao = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    APagar = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -54,7 +55,7 @@ namespace MaternidadeAPI.Migrations
                         name: "FK_RecemNascido_Mae_Id",
                         column: x => x.Id,
                         principalTable: "Mae",
-                        principalColumn: "id",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
         }
