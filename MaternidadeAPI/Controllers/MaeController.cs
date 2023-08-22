@@ -12,7 +12,12 @@ namespace MaternidadeAPI.Controllers
         {
             _maeService = maeService;
         }
-
+        [HttpGet]
+        public async Task<ActionResult<List<MaeModel>>> GetAllMaes()
+        {
+            var mae = await _maeService.GetAllMaes();
+            return Ok(mae);
+        }
         [HttpGet("id")]
         public async Task<ActionResult<MaeModel>> GetMaeById(int id)
         {
