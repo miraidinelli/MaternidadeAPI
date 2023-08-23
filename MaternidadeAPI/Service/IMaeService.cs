@@ -9,5 +9,6 @@ namespace MaternidadeAPI.Service
 		public Task<MaeModel> AddMae(MaeModel mae);
 		public Task<List<MaeModel>?> UpdateMae(MaeModel request, int id);
 		public Task<List<MaeModel>?> UpdateHistoricoMedico(string request, int id);
+		public Task<List<MaeModel>> GetMaeByEstadoCivil(string estado);
 	}
 }

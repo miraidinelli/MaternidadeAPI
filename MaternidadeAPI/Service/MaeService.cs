@@ -71,5 +71,11 @@ namespace MaternidadeAPI.Service
 			await _dataContext.SaveChangesAsync();
 			return await GetAllMaes();
 		}
+
+		public async Task<List<MaeModel>> GetMaeByEstadoCivil(string estado)
+		{
+			var mae = await _dataContext.Mae.Where(m => m.EstadoCivil == estado).ToListAsync();
+			return mae;
+		}
 	}
 }

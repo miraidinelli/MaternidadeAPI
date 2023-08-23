@@ -17,9 +17,23 @@ namespace MaternidadeAPI.Controllers
 		public async Task<ActionResult<List<MaeModel>>> GetAllMaes()
 		{
 			var mae = await _maeService.GetAllMaes();
+			if (mae == null)
+			{
+				NotFound("A Pesquisa não retornou nenhum resultado");
+			}
 			return Ok(mae);
 		}
-		[HttpGet("id")]
+		[HttpGet("byEstado/{estadocivil}")]
+		public async Task<ActionResult<List<MaeModel>>> GetMaeByEstadoCivil(string estado)
+		{
+			var mae = await _maeService.GetMaeByEstadoCivil(estado);
+			if (mae == null)
+			{
+				NotFound("A Pesquisa não retornou nenhum resultado");
+			}
+			return Ok(mae);
+		}
+        [HttpGet("id")]
 		public async Task<ActionResult<MaeModel>> GetMaeById(int id)
 		{
 			var mae = await _maeService.GetMaeById(id);
